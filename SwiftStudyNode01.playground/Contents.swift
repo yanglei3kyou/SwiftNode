@@ -45,8 +45,37 @@ var occupations: Dictionary = [
 occupations["key13"] = "d"
 print(occupations)
 
-let emptyArray = [String]()
-let emptyDictionary = [String: Int]()
+var emptyArray = [String]()
+var emptyDictionary = [String: Int]()
+
+emptyDictionary["First"] = 9
+emptyDictionary
+
+emptyArray.append("First")
+emptyArray = []
+occupations = [:]
+
+emptyArray.append("String")
+emptyDictionary["SSS"] = 4
+emptyDictionary
+
+// Page 10 
+let individualScores = [100,42,33,50,12]
+var teamScore = 0
+for score in individualScores {
+    if score >= 50 {
+        teamScore += 3
+    } else {
+        teamScore += 1
+    }
+}
+
+print(teamScore)
+
+
+
+
+
 
 
 

@@ -60,6 +60,7 @@ emptyDictionary["SSS"] = 4
 emptyDictionary
 
 // Page 10 
+// 此处的()可以省略,但是 {}不能省略(注:此处与Objective-C不同)
 let individualScores = [100,42,33,50,12]
 var teamScore = 0
 for score in individualScores {
@@ -71,6 +72,114 @@ for score in individualScores {
 }
 
 print(teamScore)
+
+// Page 11
+var optionalString: String? = "Hello"
+print(optionalString == nil)
+
+var optionalName: String? = "John Appleseed"
+//var optionalName: String? = nil
+
+// 可选值的使用方式
+var greeting = "Hello!"
+if let name = optionalName {
+    greeting = "Hello \(name)!"
+} else {
+    greeting = "Hello EveryBody!"
+}
+
+// Page 12
+// Switch 对类型不做限制 fallthrough 穿透 (注:此处默认每个case 自带 break,与Objective-C不同) 必须有个default
+let vegetabel = "red pepper"
+switch vegetabel {
+    case "celery":
+        print("Add some raisins and make ants on a log.")
+    case "cucumber","watercress":
+        print("That would make a good teasandwich.")
+    case let x where x.hasSuffix("pepper"):
+        print("Is it a spicy\(x)?")
+    default:
+        print("Everything tastes good in soup")
+}
+
+// Page 13
+let interestingNumber = [
+    "Prime":[2,3,5,7,11,13],
+    "Fibonacci":[1,1,2,3,5,8],
+    "Square":[1,4,9,16,25],
+]
+
+// Page 14
+var largest = 0
+var kindString: String = ""
+for (kind, numbers) in interestingNumber {
+    for number in numbers {
+        if number > largest {
+            largest = number
+            kindString = kind
+        }
+    }
+}
+print("The largest number is \(largest), The kind is \(kindString)")
+
+// Page 15  while(){}   repeat{}while()
+var n = 2
+while n < 100 {
+    n = n * 2
+}
+print(n)
+
+var m = 2
+repeat {
+    m = m * 2
+} while m < 100
+print(m)
+
+
+// Page 16 ..< 不包括右侧  ...包括右侧
+var firstForLoop = 0
+for i in 0..<4 {
+    firstForLoop += i
+}
+print(firstForLoop);
+
+var secondForLoop = 0
+for var i = 0; i < 4; i++ {
+    secondForLoop += i
+}
+print(secondForLoop)
+
+
+var thirdForLoop = 0
+for i in 0...4 {
+    thirdForLoop += i
+}
+print(thirdForLoop)
+
+
+// Page 17
+func greet(name: String, day: String)->String {
+    return "Hello \(name), today is \(day)"
+}
+greet("Peter", day: "Sunday")
+
+func greet(name: String, lunch: String)->String {
+    return "Hello \(name), today wo eat \(lunch)"
+}
+greet("Peter", lunch: "Chicken")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

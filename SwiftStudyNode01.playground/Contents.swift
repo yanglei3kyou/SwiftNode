@@ -169,6 +169,122 @@ func greet(name: String, lunch: String)->String {
 greet("Peter", lunch: "Chicken")
 
 
+// Page 18
+func calculateStatistics(scores:[Int])->(min:Int, max:Int, sum:Int) {
+    var minV = scores[0]
+    var maxV = scores[0]
+    var sumV = 0
+    
+    for score in scores {
+        if score > maxV {
+            maxV = score
+        } else if score < minV {
+            minV = score
+        }
+        sumV += score
+    }
+    
+    return (minV,maxV,sumV)
+    
+}
+
+let statistics = calculateStatistics([5,3,100,3,9])
+print(statistics.sum)
+print(statistics.2)
+
+// Page 19
+func sumOf(numbers:Int...)->(sum:Int, average: Double) {
+    var sum = 0
+    var average = 1.0
+    for number in numbers {
+        sum += number
+    }
+    
+    if numbers.count == 0 {
+        average = 0
+    } else  {
+        average = Double(average)/Double(numbers.count)
+    }
+    
+    return (sum,average)
+}
+
+sumOf()
+sumOf(42,597,12)
+
+// Page 20 函数可以嵌套 
+func returnFifteen()->Int {
+    var y = 10
+    func add() {
+        y += 5
+    }
+    add()
+    return y
+}
+
+returnFifteen()
+
+
+func makeIncrementer()->(Int -> Int) {
+    func addOne(number:Int)->Int {
+        return number+1
+    }
+    
+    return addOne
+}
+
+var increment = makeIncrementer()
+increment(7)
+
+
+// Page 21 函数也可以作为一个参数使用
+func hasAnyMatches(list:[Int], condition:Int->Bool)->Bool {
+    for item in list {
+        if lessThanTen(item) {
+            return true;
+        }
+    }
+    return false;
+}
+
+func lessThanTen(number:Int)->Bool {
+    return number < 10
+}
+
+var numbers = [20,19,7,12]
+hasAnyMatches(numbers, condition: lessThanTen)
+
+// Page 22 闭包 closure
+numbers.map { (number: Int) -> Int in
+    let result = 3 * number
+    return result
+}
+
+numbers.map { (number: Int) -> Int in
+    var result = 0
+    if number%2 != 0 {
+        result = number
+    }
+    return result
+}
+
+numbers.map { number in
+    number * 3
+}
+
+numbers.map {
+    $0 * 3
+}
+
+numbers.sort{
+    $0 < $1
+}
+
+
+
+
+
+
 
 
 

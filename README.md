@@ -4,5 +4,5 @@ Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，
 
 此项目包括
 <br>1. Swift 学习中的一些Coding
-<br>2. Swift 学习中的一些idea
+<br>2. Swift 学习中的一些Idea
 <br>3. Swift 学习中得一些Demo

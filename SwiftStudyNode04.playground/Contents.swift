@@ -67,5 +67,25 @@ extension Int: ExampleProtocol {
 }
 print(7.simpleDescription)
 
+protocol absoluteValuePro {
+    mutating func absoluteValue()->Double
+}
+
+extension Double: absoluteValuePro {
+    func absoluteValue()->Double {
+        if self > 0 {
+            return self
+        } else {
+            return -self
+        }
+        
+    }
+}
+
+print((-3.14).absoluteValue())
+
+let protocalValue: ExampleProtocol = a
+print(protocalValue.simpleDescription)
+
 
 

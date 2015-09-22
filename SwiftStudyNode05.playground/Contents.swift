@@ -76,7 +76,10 @@ print(maxValue)
     On a 64-bit platform, UInt is the same size as UInt64
 */
 
-
+/*
+    Double represents a 64-bit floating-point number
+    Float represents a 32-bit floating-point number
+*/
 
 
 

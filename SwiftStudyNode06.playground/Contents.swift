@@ -70,7 +70,61 @@ let threeAddPi = Double(three) + pointOneFourOneFiveNine
 // Float(Double)->Int or Intger must be shorted!
 let integerPi = Int(pi)
 
+// Type Aliases
+typealias AudioSample = UInt16
+var maxAmplitudeFound = AudioSample.min
 
+// Booleans
+let orangesAreOrange = true
+let turnipsAreDelicious = false
+
+if turnipsAreDelicious {
+    print("Mmm, tasty turnips!")
+} else {
+    print("Eww, turnips are horrible.")
+}
+
+let i = 1
+// Error
+//if i {
+//    
+//}
+
+if i == 1 {
+    
+}
+
+// Tuples
+let http404Error = (404,"Not Found")
+let (statusCode, statusMessage) = http404Error
+print("The status code is \(statusCode)")
+print("The status message is \(statusMessage)")
+
+let (justTheStatusCode, _) = http404Error
+print("The status code is \(justTheStatusCode)")
+
+print("The status code is \(http404Error.0)")
+print("The status message is \(http404Error.1)")
+
+let http200Status = (statusCodeName: 200,descriptionName:"OK")
+print("The status code is \(http200Status.statusCodeName)")
+print("The status message is \(http200Status.descriptionName)")
+
+// Optionals
+let possibleNumber = "123"
+let convertedNumber = Int(possibleNumber)
+
+var serverResponseCode: Int? =  404
+serverResponseCode = nil
+
+var surveyAnswer: String?
+if convertedNumber != nil {
+    print("convertedNumber contains some integer value.")
+}
+
+if convertedNumber != nil {
+    print("convertedNumber has an integer value of \(convertedNumber).")
+}
 
 
 

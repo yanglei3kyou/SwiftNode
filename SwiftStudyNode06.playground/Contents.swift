@@ -126,6 +126,69 @@ if convertedNumber != nil {
     print("convertedNumber has an integer value of \(convertedNumber).")
 }
 
+// Optional Binding
+if let actualNumber = Int(possibleNumber) {
+    print("\'\(possibleNumber)\' has an integer value of \(actualNumber)")
+} else {
+    print("\'\(possibleNumber)\' could not be converted to an integer")
+}
+
+if let firstNumber = Int("4"), secondNumber = Int("42") where firstNumber < secondNumber {
+    print("\(firstNumber) < \(secondNumber)")
+}
+
+// Implicitly Unwrapped Optionals
+let possibleString: String? = "An optional string"
+let forcedString: String = possibleString!
+
+let assumedString: String! = "An implicitly unwrapped optional string."
+let implicitString: String = assumedString
+
+if assumedString != nil {
+    print(assumedString)
+}
+
+if let definiteString = assumedString {
+    print(definiteString)
+}
+
+// Error Handing
+
+func canThrowAnError() throws {
+    
+}
+
+do {
+    try canThrowAnError()
+    
+} catch {
+    
+}
+
+func makeASandwich() throws {
+    
+}
+
+// Assertions 断言
+/*
+    trigger 触发
+    cause 原因，造成
+    execution 执行，履行
+    omit 忽视，删除
+    potential 潜在，可能性
+*/
+let age = -3
+//assert(age > 0, "A person's age connot be less than zero")
+
+
+
+
+
+
+
+
+
+
 
 
 

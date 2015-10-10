@@ -18,3 +18,4 @@ Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，
 <br>5. SwiftStudyNode05 ----------------- Lanuage Guide - The Basic
 <br>6. SwiftStudyNode06 ----------------- The Safety and Type Inference
 <br>7. SwiftStudyNode07 ----------------- Basic Operators
+<br>8. SwiftStudyNode08 ----------------- Strings and Characters

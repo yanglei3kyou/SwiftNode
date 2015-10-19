@@ -21,3 +21,4 @@ Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，
 <br>8. SwiftStudyNode08 ----------------- Strings and Characters
 <br>9. SwiftStudyNode09 ----------------- Collection Types
 <br>10. SwiftStudyNode10 ---------------- Control Flow
+<br>11. SwiftStudyNode11 ---------------- Functions

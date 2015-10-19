@@ -171,3 +171,110 @@ case let (x, y):
     print("somewhere else at \(x),\(y)")
 }
 
+// Where
+let yetAnotherPoint = (1, -1)
+switch yetAnotherPoint {
+case let (x,y) where x == y:
+    print("\(x),\(y) is on the line x == y")
+case let (x,y) where x == -y:
+    print("\(x),\(y) is on the line x == -y")
+case let (x,y):
+    print("\(x),\(y) is just some arbitrary point")
+}
+
+// Continue 
+let puzzleInput = "great minds think alike"
+var puzzleOutput = ""
+for character in puzzleInput.characters {
+    switch character {
+    case "a", "e", "i", "o", "u", " ":
+        continue
+    default:
+        puzzleOutput.append(character)
+    }
+}
+
+print(puzzleOutput)
+
+// Break in a Switch Statement
+let numberSymbol: Character = "三"
+var possibleIntegerValue: Int?
+switch numberSymbol {
+case "1", "一":
+    possibleIntegerValue = 1
+case "2", "二":
+    possibleIntegerValue = 2
+case "3", "三":
+    possibleIntegerValue = 3
+case "4", "四":
+    possibleIntegerValue = 4
+default:
+    break;
+}
+
+if let integerValue = possibleIntegerValue {
+    print("The integer value of \(numberSymbol) is \(integerValue).")
+} else {
+    print("An integer value could not be found for \(numberSymbol).")
+}
+
+// Fallthrough
+let integerToDescribe = 5
+var description = "The number \(integerToDescribe) is"
+switch integerToDescribe {
+case 2,3,5,7,11,13,17,19:
+    description += " a prime number, and also"
+    fallthrough
+default:
+    description += " an integer."
+}
+
+print(description)
+
+// Labeled Statements
+
+// Early Exit
+func greet(person:[String:String]) {
+    guard let name = person["name"] else {
+        return
+    }
+    print("Hello \(name)")
+    
+    guard let location = person["location"] else {
+        print("I hope the weather is nice near you.")
+        return
+    }
+    
+    print("I hope the weather is nice in \(location).")
+}
+
+greet(["name" : "John"])
+
+greet(["name" : "John","location":"Cupertino"])
+
+// Checking API Availability
+if #available(iOS 9, OSX 10.10, *) {
+    
+} else {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

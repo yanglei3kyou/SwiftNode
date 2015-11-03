@@ -25,3 +25,4 @@ Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，
 <br>12. SwiftStudyNode12 ---------------- Closures
 <br>13. SwiftStudyNode13 ---------------- Enumerations
 <br>14. SwiftStudyNode14 ---------------- Classes and Structures
+<br>15. SwiftStudyNode15 ---------------- Properties

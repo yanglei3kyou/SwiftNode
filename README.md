@@ -23,3 +23,5 @@ Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，
 <br>10. SwiftStudyNode10 ---------------- Control Flow
 <br>11. SwiftStudyNode11 ---------------- Functions
 <br>12. SwiftStudyNode12 ---------------- Closures
+<br>13. SwiftStudyNode13 ---------------- Enumerations
+<br>14. SwiftStudyNode14 ---------------- Classes and Structures

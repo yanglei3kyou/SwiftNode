@@ -28,3 +28,4 @@ Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，
 <br>15. SwiftStudyNode15 ---------------- Properties
 <br>16. SwiftStudyNode16 ---------------- Methods
 <br>17. SwiftStudyNode17 ---------------- Subscripts
+<br>18. SwiftStudyNode18 ---------------- Inheritance

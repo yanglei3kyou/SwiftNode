@@ -364,11 +364,3 @@ print(board.squareIsBlackAtRow(0, colum: 1))
 print(board.squareIsBlackAtRow(9, colum: 9))
 
 
-
-
-
-
-
-
-
-

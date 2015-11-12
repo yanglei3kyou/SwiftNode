@@ -35,3 +35,4 @@ Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，
 <br>22. SwiftStudyNode22 ---------------- Optional Chaining
 <br>23. SwiftStudyNode23 ---------------- Error Handling
 <br>24. SwiftStudyNode24 ---------------- Type Casting
+<br>25. SwiftStudyNode25 ---------------- Nested Types

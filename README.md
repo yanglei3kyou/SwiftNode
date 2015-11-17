@@ -38,3 +38,4 @@ Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，
 <br>25. SwiftStudyNode25 ---------------- Nested Types
 <br>26. SwiftStudyNode26 ---------------- Extensions
 <br>27. SwiftStudyNode27 ---------------- Protocols
+<br>28. SwiftStudyNode28 ---------------- Generics

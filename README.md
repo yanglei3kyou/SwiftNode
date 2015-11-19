@@ -1,6 +1,6 @@
  SwiftNode
 ---
-Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，在 Apple 发布 The Swift Programming Language(Swift 2) 
+Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，在 Apple 发布 The Swift Programming Language(Swift 2)(已更新至 Swift 2.1) 
 正式版的时候决定做一些弥补。
 
 此项目包括
@@ -41,3 +41,6 @@ Swift 1.2版学习的时候未做一些Coding及Summary,为了弥补遗憾吧，
 <br>28. SwiftStudyNode28 ---------------- Generics
 <br>29. SwiftStudyNode29 ---------------- Access Control
 <br>30. SwiftStudyNode30 ---------------- Advanced Operators
+<br>
+<br> 记:
+<br> The Swift Programming Language 在 Language Reference 中都是前文语法的集合，故不在仔细研究了，后期会大致看一遍。
